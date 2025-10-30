@@ -1,0 +1,121 @@
+.sellers-spotlight {
+  background: #f7fafc;
+}
+
+.spotlight-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.spotlight-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #2d3748;
+  text-align: center;
+}
+
+.sold-items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sold-item-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.sold-item-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.sold-item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.sold-item-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+.final-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #48bb78;
+  margin-bottom: 5px;
+}
+
+.seller-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.rating {
+  color: #f6ad55;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-left: 4px solid #667eea;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #4a5568;
+}
+
+.testimonial-author h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+.testimonial-author p {
+  color: #718096;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.stats {
+  background: #edf2f7;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #667eea;
+  display: inline-block;
+}
+
+@media (max-width: 968px) {
+  .spotlight-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
